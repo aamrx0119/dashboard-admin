@@ -1,0 +1,46 @@
+
+.widgetSm{
+    flex: 1;
+    box-shadow: 0 0 15px -10px rgba(0, 0, 0,0.75);
+    padding: 20px;
+
+}
+.widgetSmTitle{
+    margin-bottom: 15px;
+}
+.widgetSmItems{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+
+}
+
+.widgetSmImg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+}
+
+.widgetSmName{
+    font-size: 20px;
+}
+.widgetSmJob{
+    font-size: 15px;
+    color: #acabab;
+    
+}
+
+.widgetSmItemIcon{
+    font-size: 1.5rem !important;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px){
+    .widgetSm{
+        margin-top: 1.5rem;
+    }
+
+}

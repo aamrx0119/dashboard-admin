@@ -1,0 +1,13 @@
+.productsContainer{
+    flex: 6;
+    margin-top: 50px;
+}
+.gridProducts{
+    padding: 2rem;
+    height: auto;
+
+}
+.dataGrid{
+    box-shadow: 0 0 15px -10px rgba(0, 0, 0,0.75);
+    border: none;
+}

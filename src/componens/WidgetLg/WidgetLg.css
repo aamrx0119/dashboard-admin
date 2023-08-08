@@ -1,0 +1,76 @@
+.widgetLg{
+    flex: 2;
+    margin-left: 2rem;
+    padding: 20px;
+    box-shadow: 0 0 15px -10px rgba(0, 0, 0,0.75);
+}
+.tableLg{
+    width: 100%;
+
+}
+.widgetTitleLg{
+    margin-bottom: 15px;
+
+}
+.tableRow{
+
+}
+.tableHead{
+    text-align: start;
+
+}
+.tableData{
+    padding: 1.5rem 0;
+
+}
+.customerImg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+}
+.tableCustomer{
+    display: flex;
+    align-items: center;
+}
+.customerName{
+    margin-left: 0.5rem;
+
+}
+.tableinfo{
+    color: #acabab;
+
+}
+.tableStatus{
+    padding: 0.5rem;
+    font-size: 12px;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.tableStatusApproved{
+    background-color: #afe4a6;
+    color: #1c6c0e;
+    
+}
+.tableStatusPending{
+    background-color: #b8eced;
+    color: #047eaf;
+    
+}
+.tableStatusDeclined{
+    background-color: #efc6cc;
+    color: #875252;
+
+}
+
+
+
+@media screen and (max-width: 768px){
+    .widgetLg{
+        margin-left: 0;
+        margin-top: 1.5rem;
+
+    }
+
+}

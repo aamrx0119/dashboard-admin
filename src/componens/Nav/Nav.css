@@ -1,0 +1,70 @@
+.navbar{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    top: 0;
+    background-color: inherit;
+    padding: 0.5rem;
+    z-index: 999;
+    
+}
+.navContainer{
+    padding: 0.5rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.navLogo{
+    font-size: 2rem;
+    font-weight:600;
+    cursor: pointer;
+
+}
+.navItems{
+    display: flex;
+    align-items: center;
+
+}
+.navIconsContainer{
+    margin-right: .5rem;
+    display: flex;
+    align-items: center;
+
+}
+.navIcon{
+    margin-right: 0.5rem;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.navBadge{
+    font-size: 15px;
+    position: absolute;
+    color: white;
+    width: 15px;
+    height: 15px;
+    top: -5px;
+    padding: 8px;
+    right: 0;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.navAvatarContainer{
+    width: 40px;
+    height: 40px;
+}
+.navAvatar{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+}

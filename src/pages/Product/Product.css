@@ -1,0 +1,262 @@
+.productContainer{
+    flex: 6;
+    margin-top: 50px;
+
+}
+.productHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.productTitle{
+    font-weight: 700;
+}
+
+.productBtn{
+    border: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    background-color: teal;
+    
+}
+
+.productInfo{
+    display: flex;
+    justify-content: space-around;
+}
+
+.productInfoLeft,
+.productInfoRight{
+    box-shadow: 0 0 15px -10px rgba(0, 0, 0,0.75);
+    flex: 0 1 calc(50% - 3rem);
+    padding: 20px;
+}
+.productInfoTop{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+
+}
+.productInfoImg{
+    width: 40px;
+    height: 40px;
+
+}
+.productName{
+    margin-left: 0.5rem;
+
+}
+.productDetail{
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+
+}
+.productDetailKey{
+    font-weight: 600;
+
+}
+.productDetailVal{
+    font-weight: 300;
+    font-size: 14px;
+    color: rgb(156, 157, 158);
+
+}
+
+.productControl{
+    flex: 6;
+    box-shadow: 0 0 15px -10px rgba(0, 0, 0,0.75);
+    padding: 20px;
+    margin: 1.5rem;
+
+}
+.productForm{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.formLeft{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.formInput{
+    
+    display: flex;
+    flex-direction: column;
+
+}
+.formInput > label{
+    margin-bottom: 0.5rem;
+}
+.formInput > select{
+    margin-bottom: 0.5rem;
+    border: none;
+    padding: 5px;
+
+}
+.formInput > input{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgb(171, 169, 169);
+    margin-bottom: 1rem;
+    padding: 5px;
+}
+.formRight{
+    display: flex;
+    flex-direction: column;
+
+}
+.imageContainer{
+    display: flex;
+    align-items: center;
+
+}
+.formRightImg{
+    width: 100px;
+    height: 100px;
+    margin-right: 1rem;
+
+}
+.uploadProduct{
+    padding: 10px 15px;
+    color: white;
+    background-color: darkblue;
+    border: none;
+    border-radius: 10px;
+    margin-top: 2rem;
+    cursor: pointer;
+
+}
+
+
+@keyframes modalAnimation{
+    from{
+        transform: scale(0);
+    }
+    to{
+        
+        transform: scale(1);
+    }
+}
+
+/* @keyframes modalAnimation2{
+    from{
+        transform: scale(1);
+    }
+    to{
+        
+        transform: scale(0);
+    }
+} */
+
+.modal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(2, 2, 2, 0.423);
+    z-index: 1000;
+}
+.modalContainer{
+    box-shadow: 0 0 15px -10px rgba(0, 0, 0,0.75);
+    border-radius: 10px;
+    padding: 20px;
+    width: 50%;
+    left: 25%;
+    position: relative;
+    top: 25%;
+    
+    
+    background-color: white;
+    
+}
+.modalActive{
+    animation: modalAnimation ease 0.5s;
+    
+}
+/* .modaldeAtive{
+    animation: modalAnimation2 ease 0.5s;
+
+} */
+
+.modalHeader{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    
+}
+
+.modalTitle{
+    font-weight: 700;
+    
+}
+.modalClose{
+    /* font-size: 32px; */
+    cursor: pointer;
+
+}
+.modalBody{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.inputContainer{
+    flex: 0 1 calc(50% - 1rem);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+
+}
+
+.inputContainer > input,select,option  {
+    padding: 5PX;
+    border: none;
+    outline: none;
+}
+
+.inputContainer > input  {
+    border-bottom: 2px solid rgb(188, 186, 186);
+}
+
+.modalFooter{
+    display: flex;
+    margin: 1rem 0 0 auto;
+    gap: 1rem;
+    align-items: center; 
+    
+}
+
+.modalBtn{
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.btnClose,.btnSend{
+    color: white;
+    transition: all ease-in 0.2s;
+
+}
+.btnSend{
+    background-color: teal;
+
+}
+.btnClose{
+    background-color: rgb(249, 21, 21);
+}
+.btnSend:hover{
+    background-color: rgb(1, 83, 83);
+}
+.btnClose:hover{
+    background-color: red;
+}

@@ -1,0 +1,38 @@
+.card{
+    width: 300px;
+    padding: 2rem;
+
+
+    box-shadow:0 0 15px -10px  rgba(0, 0, 0,0.75);
+
+}
+.cardTitle{
+    font-size: 2rem;
+    /* font-weight: bold; */
+}
+.analyices{
+    display: flex;
+    align-items: center;
+}
+.price{
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.card-icons{
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    margin-left: .5rem;
+    color: red;
+}
+.active{
+    color: green;
+}
+.cardFooter{
+    color: rgb(122, 122, 122 ,0.896);
+
+}

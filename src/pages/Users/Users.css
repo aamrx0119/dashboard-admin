@@ -1,0 +1,50 @@
+.usersContainer{
+    flex: 6;
+    margin-top: 50px;
+
+}
+.GridContainer{
+    padding: 2rem;
+    height: auto;
+}
+
+
+.userDetail{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+
+}
+.userImg{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+}
+.userName{
+    margin-left: 10px;
+
+}
+
+.actionUsers{
+    display: flex;
+    align-items: center;
+
+}
+.actionEdit{
+    background-color: #57a549;
+    font-size: 12px;
+    padding: 0.3rem 0.8rem;
+    border-radius: 2rem;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+.actionDelete{
+    margin-left: 0.5rem;
+    color: red;
+    cursor: pointer;
+
+}
