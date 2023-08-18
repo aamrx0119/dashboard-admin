@@ -1,0 +1,26 @@
+.analyticContainer{
+    flex: 6;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.analyticContent{
+    width: 80%;
+    padding: 50px;
+    margin-top: 50px;
+    border-radius: 10px;
+    background-color: var(--boxColor);
+    box-shadow: 0 0 15px -10px rgba(0, 0, 0,0.75);
+
+
+}
+
+.analyticTitle{
+    color: var(--textColor);
+    margin-bottom: 3rem;
+    font-weight: 700;
+    font-size: 32px;
+}

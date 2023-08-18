@@ -3,6 +3,10 @@
     margin-left: 2rem;
     padding: 20px;
     box-shadow: 0 0 15px -10px rgba(0, 0, 0,0.75);
+    background-color: var(--boxColor);
+    color: var(--textColor);
+    border-radius: 10px;
+
 }
 .tableLg{
     width: 100%;
@@ -34,33 +38,35 @@
     align-items: center;
 }
 .customerName{
+    font-weight: 700;
     margin-left: 0.5rem;
 
 }
 .tableinfo{
-    color: #acabab;
+    color: var(--spanColor);
 
 }
 .tableStatus{
     padding: 0.5rem;
-    font-size: 12px;
+    font-size: 16px;
     border-radius: 2rem;
+    font-weight: bold;
     cursor: pointer;
 }
 
 .tableStatusApproved{
     background-color: #afe4a6;
-    color: #1c6c0e;
+    color: #0d4d02;
     
 }
 .tableStatusPending{
     background-color: #b8eced;
-    color: #047eaf;
+    color: #012331;
     
 }
 .tableStatusDeclined{
     background-color: #efc6cc;
-    color: #875252;
+    color: #460101;
 
 }
 

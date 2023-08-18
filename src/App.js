@@ -3,6 +3,7 @@ import { useRoutes } from 'react-router-dom';
 import routes from './pages/Routes/Routes';
 import Nav from './componens/Nav/Nav'
 import Panel from './componens/Panel/Panel';
+import Footer from './componens/Footer/Footer';
 function App() {
   let router = useRoutes(routes)
   return (
@@ -13,6 +14,7 @@ function App() {
         {router}
         
       </div>
+      <Footer></Footer>
 
     </>
   );

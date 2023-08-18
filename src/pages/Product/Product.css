@@ -2,6 +2,11 @@
     flex: 6;
     margin-top: 50px;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
 }
 .productHeader{
     display: flex;
@@ -12,6 +17,7 @@
 
 .productTitle{
     font-weight: 700;
+    color: var(--textColor);
 }
 
 .productBtn{
@@ -35,6 +41,9 @@
     box-shadow: 0 0 15px -10px rgba(0, 0, 0,0.75);
     flex: 0 1 calc(50% - 3rem);
     padding: 20px;
+    background-color: var(--boxColor);
+    color: var(--textColor);
+    border-radius: 10px;
 }
 .productInfoTop{
     display: flex;
@@ -65,7 +74,7 @@
 .productDetailVal{
     font-weight: 300;
     font-size: 14px;
-    color: rgb(156, 157, 158);
+    color: var(--spanColor);
 
 }
 
@@ -73,10 +82,14 @@
     flex: 6;
     box-shadow: 0 0 15px -10px rgba(0, 0, 0,0.75);
     padding: 20px;
-    margin: 1.5rem;
+    margin: 1.5rem 1.5rem 0 1.5rem;
+    background-color: var(--boxColor);
+    color: var(--textColor);
+    border-radius: 10px;
 
 }
 .productForm{
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -89,7 +102,7 @@
     
 }
 .formInput{
-    
+    font-weight: 700;
     display: flex;
     flex-direction: column;
 
@@ -100,7 +113,8 @@
 .formInput > select{
     margin-bottom: 0.5rem;
     border: none;
-    padding: 5px;
+    padding: 10px;
+    border-radius: 15px
 
 }
 .formInput > input{
@@ -108,7 +122,8 @@
     border: none;
     border-bottom: 2px solid rgb(171, 169, 169);
     margin-bottom: 1rem;
-    padding: 5px;
+    padding: 10px;
+    border-radius: 15px;
 }
 .formRight{
     display: flex;
@@ -128,8 +143,8 @@
 }
 .uploadProduct{
     padding: 10px 15px;
-    color: white;
-    background-color: darkblue;
+    color: var(--btnColor);
+    background-color: var(--textColor);
     border: none;
     border-radius: 10px;
     margin-top: 2rem;

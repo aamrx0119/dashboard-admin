@@ -9,10 +9,26 @@
 */
 
 :root{
-  --primaryColor:#fff;
-  --textColor:#201E20;
+  --textColor:#111;
+  --bgColor:#201E20;
+  --boxColor:#60a3ea;
+  --spanColor:rgb(240, 240, 240);
+  --chartColor : #d6006e;
+  --btnColor : white; 
+  /* --textColor:#fff;
+  --bgColor:#201E20;
+  --boxColor:#09165e;
+  --spanColor:rgb(240, 240, 240);
+  */
+  
 }
 
+
+
+.darkMode{
+  background-color: var(--bgColor);
+  /* color:var(--primaryColor); */
+}
 .container {
   display: flex;
   /* margin-top: 3.5rem; */

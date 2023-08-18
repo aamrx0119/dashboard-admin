@@ -1,8 +1,11 @@
 
 .widgetSm{
     flex: 1;
-    box-shadow: 0 0 15px -10px rgba(0, 0, 0,0.75);
     padding: 20px;
+    background-color: var(--boxColor);
+    color: var(--textColor);
+    border-radius: 10px;
+
 
 }
 .widgetSmTitle{
@@ -28,8 +31,10 @@
     font-size: 20px;
 }
 .widgetSmJob{
+    font-weight: 700;
     font-size: 15px;
-    color: #acabab;
+    color: var(--spanColor);
+
     
 }
 

@@ -67,10 +67,12 @@ const columns = [
 
 export default function Users() {
   return (
+    <>
+    
     <div className="usersContainer">
 
         <div className='GridContainer'>
-            <DataGrid
+            <DataGrid getRowClassName={'dataGrid'} className='dataGrid'
             rows={rows}
             columns={columns}
             pageSizeOptions={[4]}
@@ -79,5 +81,8 @@ export default function Users() {
             />
         </div>
     </div>
+    
+
+    </>
   )
 }

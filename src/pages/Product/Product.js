@@ -286,6 +286,7 @@ export default function Product() {
 
                                     setShowModal(false)
                                     clearInputs()
+                                    setGetData(preVal=>!preVal)
                                 }} className='modalBtn btnSend'>Send</button>
 
                             </div>

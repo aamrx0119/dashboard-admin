@@ -23,6 +23,7 @@
 
 }
 .userName{
+    color: var(--textColor);
     margin-left: 10px;
 
 }

@@ -116,7 +116,7 @@ export default function Products() {
   return (
     <div className='productsContainer'>
         <div className="gridProducts">
-            <DataGrid className='dataGrid'
+            <DataGrid getRowClassName={'dataGrid'} className='dataGrid'
             rows={rows}
             columns={columns}
             pageSizeOptions={[4]}

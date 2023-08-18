@@ -6,6 +6,8 @@
     background-color: inherit;
     padding: 0.5rem;
     z-index: 999;
+    background-color: var(--boxColor);
+    color: var(--textColor);
     
 }
 .navContainer{
@@ -67,4 +69,33 @@
     height: 100%;
     border-radius: 50%;
 
+}
+
+.navColapce{
+    box-shadow: 0 0 15px -10px rgba(0, 0, 0,0.75);
+    border-radius: 10px;
+    position: absolute;
+    width: 200px;
+    height: auto;
+    right: 50%;
+    cursor: default;
+    padding: 20px;
+    color: var(--btnColor);
+    background-color: var(--textColor);
+    display: none;
+}
+.navColapceItems{
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.5rem;
+    
+}
+.navColapceItem{
+    padding: 10px;
+    border-bottom: 2px solid ;
+
+}
+
+.active{
+    display: block;
 }

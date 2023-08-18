@@ -1,8 +1,9 @@
 .card{
     width: 300px;
     padding: 2rem;
-
-
+    background-color: var(--boxColor);
+    border-radius: 10px;
+    color: var(--textColor);
     box-shadow:0 0 15px -10px  rgba(0, 0, 0,0.75);
 
 }
@@ -33,6 +34,6 @@
     color: green;
 }
 .cardFooter{
-    color: rgb(122, 122, 122 ,0.896);
+    color: var(--spanColor);
 
 }
