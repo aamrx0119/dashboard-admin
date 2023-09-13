@@ -1,6 +1,7 @@
 import React from 'react'
 import { LineChart,YAxis,XAxis,Line,CartesianGrid,Tooltip,ResponsiveContainer } from 'recharts';
 import './Chart.css'
+import { useMemo } from 'react';
 
 
 export default function Chart({title,debounce,aspect,Data,dataKey}) {
@@ -9,7 +10,11 @@ export default function Chart({title,debounce,aspect,Data,dataKey}) {
   let chartColor = (rs.getPropertyValue('--chartColor'));
   return (
     <>
-
+      {useMemo(()=>{
+        return(
+          <>
+          {console.log('Chart')}
+          
             <h2 className='chartTitle'>{title}</h2>
 
             <ResponsiveContainer debounce={debounce} width="100%"  aspect={aspect} >
@@ -22,7 +27,12 @@ export default function Chart({title,debounce,aspect,Data,dataKey}) {
                     <Tooltip contentStyle={{backgroundColor: 'white',color:'black'}} />
                 </LineChart>
             </ResponsiveContainer> 
+          
+          </>
 
+        )
+
+      },[title])}
     </>
   )
 }

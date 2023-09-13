@@ -33,7 +33,7 @@ export default function WidgetSm() {
 
                 return(
 
-                    <ul className="widgetSmItems">
+                    <ul key={user.id} className="widgetSmItems">
                         <li className="widgetSmItem">
                             <img  className='widgetSmImg' src="./images/medium.jpg" alt="" />
                         </li>

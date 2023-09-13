@@ -79,23 +79,97 @@
     height: auto;
     right: 50%;
     cursor: default;
-    padding: 20px;
+    /* padding: 10px; */
     color: var(--btnColor);
     background-color: var(--textColor);
     display: none;
 }
 .navColapceItems{
-    text-decoration: none;
     list-style: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     
 }
 .navColapceItem{
-    padding: 10px;
-    border-bottom: 2px solid ;
+    text-decoration: none;
+    color: var(--btnColor);
+    display: block;
+    padding: 8px;
+    transition: all ease-out 0.3s;
+    /* padding: 10px; */
+    /* border-bottom: 2px solid ; */
 
 }
 
+.navColapceItem:hover{
+    background-color: var(--btnColor);
+    color: var(--textColor);
+}
 .active{
     display: block;
+}
+
+.deactive{
+    display: none;
+}
+
+.menu{
+    display: none;
+}
+
+
+.navMenu{
+    display: none;
+    background-color: #0808085c;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1000;
+
+
+}
+.activeMenu{
+    display: block;
+}
+.navMenuItems{
+    color: var(--textColor);
+    display: flex;
+    justify-content: space-between;
+    background-color:#757575;
+    width: 50%;
+    height: 100%;
+    list-style: none;   
+    animation: MenuAnimation 0.5s ease;
+}
+@keyframes MenuAnimation{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 50%;
+    }
+    
+}
+.MenuItemContainer{
+    padding: 40px;
+    font-size: bold;
+}
+.navMenuItem{
+    display: block;
+    margin-bottom: 1.5rem;
+    text-decoration: none;
+    color: var(--textColor);
+    font-weight: 700;
+    font-size: 1.5rem;
+    
+}
+.closeMenuBtn{
+    margin: 10px;
+    cursor: pointer;
+}
+@media screen and (max-width:768px){
+    .menu{
+        display: block;
+        margin-left: 1rem;
+    }
+    
 }

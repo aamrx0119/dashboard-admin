@@ -3,9 +3,11 @@ import './Product.css'
 import Chart from '../../componens/Chart/Chart'
 import Data from '../../componens/Data/Data';
 import { useParams } from 'react-router-dom';
-import { useState,useEffect } from 'react';
+import { useState,useEffect,useMemo } from 'react';
 import CloseIcon from '@mui/icons-material/Close';
 import Publishicon from '@mui/icons-material/Publish';
+import { memo } from 'react';
+import { useRef } from 'react';
 
 export default function Product() {
     const [Products,setProducts]=useState([])
@@ -21,6 +23,12 @@ export default function Product() {
     const [NewPrice,setNewPrice]=useState('')
     const [NewActive,setNewActive]=useState(false)
     const [NewINStock,setNewINStock]=useState(false)
+
+    const cssStyles = useRef()
+
+
+
+    const [Name,setName]=useState('MYname')
 
     let items = {
         active:false,
@@ -82,8 +90,36 @@ export default function Product() {
     
 
 
+    const Delay = function(){
+        let data = setTimeout(()=>{
+            return (
+                <div className="Test">
+                    <h2 style={
+                        {"marginTop":'30px'}
+                        
+                    }>{Name}</h2>
+                </div> 
+            )
+        },5000)
+
+        console.log(data);
+
+    }
+
+
+    const setCss = ()=>{
+
+        cssStyles.current.style.backgroundColor = 'red'
+
+    }
+
   return (
     <>
+
+        {/* {setTimeout(()=>{
+            console.log('5555');
+
+        },5000)} */}
         <div className='productContainer'>
         {Show?(
             <>
@@ -92,9 +128,10 @@ export default function Product() {
                     <button onClick={()=>setShowModal(true)} className="productBtn">Create</button>
                 </div>
         
-                <div className="productInfo">
+                <div ref={cssStyles} className="productInfo">
                     <div className="productInfoLeft">
-                        <Chart title='Sell in Month' Data={Data.slice(Product[1].id,Product[1].id + 3)} dataKey='name' debounce={300} aspect={4}></Chart>
+                        <Chart title='Sell in Month' Data={Data.slice(Product[1].id,Product[1].id + 3)} dataKey='name' debounce={300} aspect={4}></Chart>                        )
+
                     </div>
                     <div className="productInfoRight">
                         <div className="productInfoTop">
@@ -124,7 +161,7 @@ export default function Product() {
                     </div>
                 </div>
         
-                <div className="productControl">
+                <div ref={cssStyles} className="productControl">
                     <form className="productForm" onSubmit={(e)=>{
                         e.preventDefault()
                         let items = 
@@ -212,6 +249,9 @@ export default function Product() {
                         </div>
                     </form>
                 </div>
+
+
+                {/* <button onClick={setCss}>Add Css</button> */}
             </>
         ):('Loading ... ')}
         </div>
@@ -293,7 +333,9 @@ export default function Product() {
                         </form>
                     </div>
                 </div>
-            </div> 
+                
+            </div>
+
         ):('')}
         
     </>

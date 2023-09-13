@@ -5,7 +5,7 @@ export default function Footer (){
         <>
             <div className='footer'>
                 <div className='footerContainer'>
-                    <h2>This Website Created by ALI</h2>
+                    <h2>This Website Created by MRX</h2>
 
                 </div>
             </div>

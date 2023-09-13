@@ -42,31 +42,37 @@ export default function WidgetLg() {
     <div className='widgetLg'>
         <h3 className="widgetTitleLg">Lastest TransAction</h3>
         <table className='tableLg'>
-            <tr className='tableRow'>
-                <th className='tableHead'>Customer</th>
-                <th className='tableHead'>Date</th>
-                <th className='tableHead'>Amount</th>
-                <th className='tableHead'>Status</th>
-            </tr>
+            <thead>
+
+                <tr className='tableRow'>
+                    <th className='tableHead'>Customer</th>
+                    <th className='tableHead'>Date</th>
+                    <th className='tableHead'>Amount</th>
+                    <th className='tableHead'>Status</th>
+                </tr>
+            </thead>
             {Show?(
-                Customers[0][1].map(customer=>{
-                    return (
+                <tbody>
+                    
+                    {Customers[0][1].map(customer=>{
+                        return (
+                            
+                            <tr key={customer.id} className='tableRow'>
+                                <td className='tableData tableCustomer'>
+                                    <img className='customerImg' width={40} height={40} src="./images/medium.jpg" alt="" />
+                                    <span className='customerName'>{customer.name}</span>
+                                </td>
+                                <td className='tableData tableinfo'>{customer.date}</td>
+                                <td className='tableData tableinfo'>{customer.price}$</td>
+                                <td className='tableData'>
+                                    <ButtonCustom type = {customer.status}></ButtonCustom>
+                                </td>
+                            </tr>
+                        )
+                    })}
+                </tbody>
 
-                        <tr key={customer.id} className='tableRow'>
-                            <td className='tableData tableCustomer'>
-                                <img className='customerImg' width={40} height={40} src="./images/medium.jpg" alt="" />
-                                <span className='customerName'>{customer.name}</span>
-                            </td>
-                            <td className='tableData tableinfo'>{customer.date}</td>
-                            <td className='tableData tableinfo'>{customer.price}$</td>
-                            <td className='tableData'>
-                                <ButtonCustom type = {customer.status}></ButtonCustom>
-                            </td>
-                        </tr>
-                    )
-                })
-
-            ):('Please Wait')}
+            ):null}
         </table>
 
     </div>
